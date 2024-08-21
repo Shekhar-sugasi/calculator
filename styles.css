@@ -1,0 +1,130 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 42px;
+    font-family: "Roboto";
+    color: forestgreen;
+}
+
+.calculator {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 350px;
+    width: 100%;
+}
+
+.screen {
+    background-color: #222;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: right;
+    height: 80px;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.keys-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.upper-keys {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.lower-keys-container{
+    display: flex;
+}
+
+button {
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+.cancel-button {
+    background-color: #ff5c5c;
+    color: #fff;
+    flex: 1;
+    margin-right: 5px;
+}
+
+.cancel-button:hover {
+    background-color: #ff3838;
+}
+
+.fa-backspace {
+    color: #ff5c5c;
+}
+
+.numbers-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.numbers-container div {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.number, .decimal {
+    flex: 1;
+    margin-right: 5px;
+}
+
+.equals {
+    background-color: #4caf50;
+    color: #fff;
+    flex: 1;
+}
+
+.equals:hover {
+    background-color: #45a049;
+}
+
+.operators-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+
+.operator-button {
+    flex: 1;
+    margin-bottom: 10px;
+    background-color: #ffa500;
+    color: #fff;
+}
+
+.operator-button:hover {
+    background-color: #ff8c00;
+}
